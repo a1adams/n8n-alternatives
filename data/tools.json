@@ -1,0 +1,236 @@
+{
+  "keyword": "n8n alternative",
+  "title": "n8n Alternative for AI Image and Video Workflows: 6 Compared (2026)",
+  "lastChecked": "2026-10-28",
+  "capabilityChecks": [
+    {
+      "key": "visualWorkflowEditor",
+      "label": "Visual workflow editor"
+    },
+    {
+      "key": "aiImageOrVideoGeneration",
+      "label": "AI image or video generation"
+    },
+    {
+      "key": "inboundWebhookTrigger",
+      "label": "Inbound webhook trigger"
+    },
+    {
+      "key": "mcpServer",
+      "label": "MCP server"
+    },
+    {
+      "key": "publicApi",
+      "label": "Public API"
+    },
+    {
+      "key": "freePlan",
+      "label": "Free plan"
+    },
+    {
+      "key": "selfServeSignUp",
+      "label": "Self-serve sign-up"
+    }
+  ],
+  "tools": [
+    {
+      "n": 1,
+      "name": "Wireflow",
+      "tagline": "Best overall for AI image and video workflows",
+      "homepage": "https://www.wireflow.ai/",
+      "docs": "https://www.wireflow.ai/docs/api/overview",
+      "pricing": "https://www.wireflow.ai/pricing",
+      "claudeConnection": "Custom connector, OAuth sign-in",
+      "restApi": true,
+      "modelSupport": "100+ image, video and audio models as nodes",
+      "freeTier": "unverified",
+      "repo": null,
+      "note": "Inbound trigger URLs are not available; another tool starts a run by calling the run endpoint with an API key (checked 2026-10-11).",
+      "quickstart": [
+        {
+          "label": "Start a run from Zapier, Make, n8n or your own backend: send the saved workflow's input values to this endpoint with an API key, then poll the execution or add a webhook block. The request format is in the API reference linked under Docs.",
+          "lang": "text",
+          "code": "POST /api/v1/workflows/{id}/run"
+        },
+        {
+          "label": "Or add the Wireflow connector to Claude Code, from the wireflowINC/skills README. Then run /mcp to sign in.",
+          "lang": "bash",
+          "code": "claude mcp add --transport http wireflow https://www.wireflow.ai/api/mcp"
+        }
+      ],
+      "moneyPage": "https://www.wireflow.ai/ai-workflow-builder",
+      "moneyPageLabel": "Wireflow AI workflow builder page",
+      "capabilities": {
+        "visualWorkflowEditor": true,
+        "aiImageOrVideoGeneration": true,
+        "inboundWebhookTrigger": false,
+        "mcpServer": true,
+        "publicApi": true,
+        "freePlan": null,
+        "selfServeSignUp": true
+      },
+      "live": {
+        "stars": null,
+        "lastPush": null,
+        "latestRelease": null,
+        "latestReleaseDate": null,
+        "checkedAt": null
+      }
+    },
+    {
+      "n": 2,
+      "name": "Zapier",
+      "tagline": "Best for no-code automations across many apps",
+      "homepage": "https://zapier.com/",
+      "docs": null,
+      "pricing": "https://zapier.com/pricing",
+      "claudeConnection": "Zapier MCP on all plans",
+      "restApi": true,
+      "modelSupport": null,
+      "freeTier": "yes",
+      "repo": null,
+      "note": "One MCP tool call uses 2 tasks from the same pool as Zaps (checked 2026-10-11).",
+      "quickstart": null,
+      "capabilities": {
+        "visualWorkflowEditor": null,
+        "aiImageOrVideoGeneration": null,
+        "inboundWebhookTrigger": true,
+        "mcpServer": true,
+        "publicApi": true,
+        "freePlan": true,
+        "selfServeSignUp": true
+      },
+      "live": {
+        "stars": null,
+        "lastPush": null,
+        "latestRelease": null,
+        "latestReleaseDate": null,
+        "checkedAt": null
+      }
+    },
+    {
+      "n": 3,
+      "name": "Make",
+      "tagline": "Best for visual scenarios that connect many apps",
+      "homepage": "https://www.make.com/en",
+      "docs": null,
+      "pricing": "https://www.make.com/en/pricing",
+      "claudeConnection": null,
+      "restApi": null,
+      "modelSupport": null,
+      "freeTier": "yes",
+      "repo": null,
+      "note": null,
+      "quickstart": null,
+      "capabilities": {
+        "visualWorkflowEditor": true,
+        "aiImageOrVideoGeneration": null,
+        "inboundWebhookTrigger": true,
+        "mcpServer": null,
+        "publicApi": null,
+        "freePlan": null,
+        "selfServeSignUp": true
+      },
+      "live": {
+        "stars": null,
+        "lastPush": null,
+        "latestRelease": null,
+        "latestReleaseDate": null,
+        "checkedAt": null
+      }
+    },
+    {
+      "n": 4,
+      "name": "Pipedream",
+      "tagline": "Best for developers wiring AI agents and workflows to many apps",
+      "homepage": "https://pipedream.com/",
+      "docs": null,
+      "pricing": "https://pipedream.com/pricing",
+      "claudeConnection": "MCP servers on all plans",
+      "restApi": true,
+      "modelSupport": null,
+      "freeTier": "yes",
+      "repo": null,
+      "note": "The Free plan is for development only, with no production environment (checked 2026-10-11).",
+      "quickstart": null,
+      "capabilities": {
+        "visualWorkflowEditor": null,
+        "aiImageOrVideoGeneration": null,
+        "inboundWebhookTrigger": true,
+        "mcpServer": true,
+        "publicApi": true,
+        "freePlan": null,
+        "selfServeSignUp": true
+      },
+      "live": {
+        "stars": null,
+        "lastPush": null,
+        "latestRelease": null,
+        "latestReleaseDate": null,
+        "checkedAt": null
+      }
+    },
+    {
+      "n": 5,
+      "name": "Gumloop",
+      "tagline": "Best for teams building AI agents across their apps",
+      "homepage": "https://www.gumloop.com/",
+      "docs": null,
+      "pricing": "https://www.gumloop.com/pricing",
+      "claudeConnection": "MCP server",
+      "restApi": true,
+      "modelSupport": "Agents on any AI model",
+      "freeTier": "unverified",
+      "repo": null,
+      "note": "Pro starts with a 14-day free trial. A trial is not listed here as a free tier.",
+      "quickstart": null,
+      "capabilities": {
+        "visualWorkflowEditor": null,
+        "aiImageOrVideoGeneration": null,
+        "inboundWebhookTrigger": null,
+        "mcpServer": true,
+        "publicApi": true,
+        "freePlan": null,
+        "selfServeSignUp": true
+      },
+      "live": {
+        "stars": null,
+        "lastPush": null,
+        "latestRelease": null,
+        "latestReleaseDate": null,
+        "checkedAt": null
+      }
+    },
+    {
+      "n": 6,
+      "name": "Lindy",
+      "tagline": "Best for inbox, calendar and meeting tasks run by an AI assistant",
+      "homepage": "https://www.lindy.ai/",
+      "docs": null,
+      "pricing": "https://www.lindy.ai/pricing",
+      "claudeConnection": null,
+      "restApi": null,
+      "modelSupport": null,
+      "freeTier": "unverified",
+      "repo": null,
+      "note": "A free start gives $50 of credits for 7 days with no card (checked 2026-10-11).",
+      "quickstart": null,
+      "capabilities": {
+        "visualWorkflowEditor": null,
+        "aiImageOrVideoGeneration": null,
+        "inboundWebhookTrigger": null,
+        "mcpServer": null,
+        "publicApi": null,
+        "freePlan": null,
+        "selfServeSignUp": true
+      },
+      "live": {
+        "stars": null,
+        "lastPush": null,
+        "latestRelease": null,
+        "latestReleaseDate": null,
+        "checkedAt": null
+      }
+    }
+  ]
+}
